@@ -1,3 +1,0 @@
-action "envsubst" {
-  uses = "./envsubst/"
-}
