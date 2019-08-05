@@ -12,4 +12,6 @@ LABEL "maintainer"="Valentin <valentin@whatdafox.com>"
 RUN apk add --update libintl && apk add --virtual build_deps gettext
 
 ADD entrypoint.sh /entrypoint.sh
+RUN chmod +x /entrypoint.sh
+
 ENTRYPOINT ["/entrypoint.sh"]
